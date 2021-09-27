@@ -1,7 +1,5 @@
-/*GUI program to add, view and search properties
-Student: Ana Cosic
-Student ID: L00161887
-Date 03.05.2021.
+/*
+GUI program to add, view and search properties
 */
 
 import javafx.application.Application;
@@ -304,7 +302,7 @@ public class EstateAgentsGUI extends Application
       }//Close for loop
       if(isFound == false) //Output message to the user if no matches
       {
-         txtWindow.setText("No property found for €" + txtPrice.getText());
+         txtWindow.setText("No property found for Â€" + txtPrice.getText());
       }  
    }//Close method
    
@@ -353,7 +351,7 @@ public class EstateAgentsGUI extends Application
          repayment = monthly + monthly * 0.03;
 
          a.setAlertType(AlertType.INFORMATION);
-         a.setContentText("Monthly repayment over " +termYears+ " years is € " + repayment);
+         a.setContentText("Monthly repayment over " +termYears+ " years is Â€ " + repayment);
          a.show();
       }
    }
